@@ -19,7 +19,6 @@ async function getFeedback(url) {
             }
         });
 
-        console.log(results);
 
         const response = await openai.chat.completions.create({
             model: "gpt-4o-mini",
@@ -44,3 +43,8 @@ async function getFeedback(url) {
         return `Error: ${error.message}`;
     }
 }
+
+
+(async () => {
+    getFeedback('https://platform.openserv.ai/project-setup');
+})();
