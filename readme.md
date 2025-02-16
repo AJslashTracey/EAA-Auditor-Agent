@@ -1,57 +1,55 @@
-# Ethereum Wallet Analysis Agent
+# EAA Compliance Agent
 
-An AI-powered agent that analyzes Ethereum wallet transactions and provides detailed token movement summaries. Built with OpenServ SDK and leveraging Etherscan API.
+An AI-powered agent that audits websites for compliance with the **European Accessibility Act (EAA)**. Built with OpenServ SDK and leveraging automated accessibility analysis.
 
 ## Features
 
-- 📊 Fetches and analyzes token transactions from any Ethereum wallet
-- 💱 Summarizes inflow and outflow activities for each token
-- 📈 Calculates total transferred amounts and movement patterns
-- 🤖 Provides AI-generated insights using GPT-o4
-- 🔗 Includes detailed transaction analysis with SpotOnChain links
+- 🔍 Validates and audits websites for **EAA compliance**
+- 🌐 Accepts only domain names (e.g., `github.com`) and formats them correctly
+- 📊 Runs an accessibility audit using `getFeedback()`
+- 📑 Categorizes issues into **EAA violations** and **best practices**
+- 🤖 Responds to chat requests with structured compliance feedback
 
 ## Prerequisites
 
-- Node.js >= 18.0.0
-- OpenServ API Key
-- Etherscan API Key
-- OpenAI API Key
+- **Node.js** >= 18.0.0
+- **OpenServ API Key**
+- **OpenAI API Key**
 
 ## Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory with the following:
+```env
+OPENSERV_API_KEY=your_openserv_api_key
+OPENAI_API_KEY=your_openai_api_key
+```
 
+## How to Use the EAA Compliance Agent
 
-
-## How to Use the Ethereum Wallet Analysis Agent
-
-1. **Request a Wallet Analysis Task**  
-   - Ask the Project Manager to assign a task to the **ETH Wallet Scanner Agent** by providing a specific wallet address.  
-   - Example request:  
+1. **Request a Website Audit**  
+   - Provide a **domain name** (not a full URL) in chat:  
      ```
-     Give me an overview of the moves from the following address: 0xab595a18366454608c3be0babd8d96436d60ec8d
+     github.com
      ```
+   - The agent will format it as `https://github.com` and perform an **EAA compliance audit**.
 
-2. **Processing the Task**  
-   - The ETH Wallet Scanner Agent will fetch and analyze token transactions for the specified wallet address.  
-   - It will summarize the **inflow/outflow activity**, **total transferred amounts**, and **movement patterns**.  
+2. **Processing the Audit Task**  
+   - The agent will run `getFeedback()` to analyze accessibility compliance.
+   - It will categorize issues as **EAA-required fixes** or **best practices**.
 
 3. **Retrieving the Output**  
-   - Once the analysis is complete, ask the Project Manager to display the output:  
+   - Once the audit is complete, ask for the output:
      ```
-     What is the output of that?
+     What are the compliance results?
      ```
-   - The response will include a **detailed report** on the token movements, transaction summaries, and relevant insights.  
+   - The response will include a **structured compliance report** with necessary fixes and recommendations.
 
 4. **Review the Report**  
-   - The final output will be AI-generated insights, including **SpotOnChain links** for further analysis.  
-   - This information can be used for **crypto market analysis**, **trading strategies**, or **on-chain investigations**.
+   - The final report provides AI-generated insights and guidance for fixing accessibility issues.
+   - The analysis can be used for **ensuring website accessibility**, **regulatory compliance**, or **improving user experience**.
 
 ---
 
-
-
 Agent will be available on [OpenServ AI](https://openserv.ai/)
 
-For questions dm us on dc .mainjcr or .pandaroe 
-
+For questions, DM us on Discord: `.mainjcr` or `.pandaroe`. 🚀
