@@ -52,4 +52,4 @@ OPENAI_API_KEY=your_openai_api_key
 
 Agent will be available on [OpenServ AI](https://openserv.ai/)
 
-For questions, DM us on Discord: `.mainjcr` or `.pandaroe`. 🚀
+For questions, DM us on Discord: `.mainjcr` 🚀
