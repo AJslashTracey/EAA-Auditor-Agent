@@ -84,4 +84,4 @@ The audit identifies several compliance issues that must be addressed to align w
 
 Agent will be available on [OpenServ AI](https://openserv.ai/)
 
-For questions, DM us on Discord: `.mainjcr` or `.pandaroe`. 🚀
+For questions, DM us on Discord: `.mainjcr` 🚀
